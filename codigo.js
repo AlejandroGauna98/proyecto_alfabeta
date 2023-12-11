@@ -1,4 +1,4 @@
-$('#formLogin').submit(function(e){
+/*$('#formLogin').submit(function(e){
    e.preventDefault();
    var usuario = $.trim($("#usuario").val());    
    var password =$.trim($("#password").val());    
@@ -38,4 +38,4 @@ $('#formLogin').submit(function(e){
            }    
         });
     }     
-});
+});*/

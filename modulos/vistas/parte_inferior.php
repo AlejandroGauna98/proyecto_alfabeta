@@ -36,7 +36,7 @@
         <div class="modal-body"></div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="../bd/logout.php">Salir</a>
+          <a class="btn btn-primary" href="logout.php">Salir</a>
   
         </div>
       </div>
@@ -44,25 +44,36 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modulos/vendor/jquery/jquery.min.js"></script>
+  <script src="modulos/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="modulos/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="modulos/js/sb-admin-2.min.js"></script>
 
  
 
   
     <!-- datatables JS -->
-    <script type="text/javascript" src="vendor/datatables/datatables.min.js"></script>    
+    <script src="datatables\jquery.dataTable.min.js"></script>
+    <script src="datatables\dataTables.bootstrap5.min.js"></script>
+    <script src="datatables\dataTables.responsive.min.js"></script>
+    <script src="datatables\dataTables.buttons.min.js"></script>
+    <script src="datatables\buttons.print.min.js"></script>
+    <script src="datatables\buttons.html5.min.js"></script>    
     <!-- código propio JS --> 
-    <script type="text/javascript" src="main.js"></script>  
+    <script type="text/javascript" src="modulos/main.js"></script>  
     
 
-    
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>    
+    <script src="popper/popper.min.js"></script>    
+      
+    <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
+    <script src="codigo.js"></script>    
 
 </body>
 
