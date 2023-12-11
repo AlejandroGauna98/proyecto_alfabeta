@@ -1,6 +1,6 @@
+<div class="container-fluid">
 <h1>BIENVENIDO</h1>
 <button class="btn btn-primary" id="botonAbrirModal">Agregar Usuarios</button>
-<div class="container-fluid">
     <div class="card m-4">
             <div class="card-body">
                 <table class="table"  id="tabla_Home">

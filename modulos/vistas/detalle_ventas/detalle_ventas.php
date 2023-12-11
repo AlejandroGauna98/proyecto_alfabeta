@@ -1,6 +1,5 @@
-<h3>Detalles de Ventas</h3>
-
 <div class="container-fluid">
+<h3>Detalles de Ventas</h3>
     <div class="card m-4">
             <div class="card-body">
                 <table class="table"  id="tabla_ventas">
@@ -19,20 +18,20 @@
     </div>
 </div>
 
-<div class="modal" tabindex="-1" id="modalDetalle">
+<div class="modal" tabindex="-1" id="modalDetalle" style="overflow-y: scroll;">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Detalle de venta</h5>
       </div>
       <div class="modal-body">
-        <div class="row gx-5 col-6">
-          <form class="">
-              <div class="mb-3">
+        <div class="row gx-5 d-block">
+          <form class="row d-flex">
+              <div class="mb-3 col-4">
                 <label class="form-label">Usuario</label>
                 <input type="text" class="form-control" disabled id="inputUsuario">
               </div>
-              <div class="mb-3">
+              <div class="mb-3 col-4">
                 <label class="form-label">Fecha de venta</label>
                 <input type="text" class="form-control" disabled id="inputFecha">
               </div>

@@ -26,12 +26,12 @@ $(document).ready(function () {
                 {data: "activo",
                     render: function(activo){
                         if(activo != 0){
-                            return `<div class="d-flex justify-content-center gap-2">
-                                        <button id="btnModificar" class="btn bg-gradient waves-effect waves-success btn-success py-1 px-2" type="button">Modificar</button>
-                                        <button id="btnDesactivar" class="btn bg-gradient waves-effect waves-danger btn-danger py-1 px-2" type="button">Desactivar</button>
+                            return `<div class="d-flex justify-content-center column-gap-2">
+                                        <button id="btnModificar" class="btn bg-gradient waves-effect waves-success btn-success py-1 px-2 mr-2" type="button">Modificar</button>
+                                        <button id="btnDesactivar" class="btn bg-gradient waves-effect waves-danger btn-danger py-1 px-2 ml-2"type="button">Desactivar</button>
                                     </div>`
                         }else{
-                            return `<div class="d-flex justify-content-center gap-2">
+                            return `<div class="d-flex justify-content-center">
                                         <button id="btnActivar" class="btn bg-gradient waves-effect waves-primary btn-primary py-1 px-2" type="button">Activar</button>
                                     </div>`
                         }
@@ -92,7 +92,7 @@ $(document).ready(function () {
             type: "POST",
             dataType: "json",
             success: function(response){
-                extraerDatos();
+                extraerUsers();
                 $('#modalAgregar').hide();
             }
         })
@@ -164,7 +164,7 @@ $(document).ready(function () {
     $('#btnAceptarModificar').on("click", function(){
         var user = $('#usernameInputMod').val();
         var nomUsuario = $('#nomUsuarioInputMod').val();
-        var rol = idRol;
+        var rol = $('#rolInputMod').val();
         var data = {back: 'modificarUsuario', username: user, nomUsuario: nomUsuario, rol: rol}
         $.ajax({
             data: data,
@@ -172,7 +172,7 @@ $(document).ready(function () {
             type: "POST",
             dataType: "json",
             success: function(response){
-                extraerDatos();
+                extraerUsers();
                 $('#modalModificar').hide();
             }
         })
@@ -190,7 +190,7 @@ $(document).ready(function () {
             type: "POST",
             dataType: "json",
             success: function(response){
-                extraerDatos();
+                extraerUsers();
             }
         })
     }

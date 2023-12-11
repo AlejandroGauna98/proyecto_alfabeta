@@ -6,7 +6,7 @@
     
     <div class="container-fluid">
     <label for="opcionesSelect">Seleccionar Opción:</label>
-    <select id="selectConsultas">
+    <select id="selectConsultas" class="form-control">
         <option selected disabled>Seleccione una opcion</option>
         <option value="opcion1">Lista de productos bajo venta de receta archivada</option>
         <option value="opcion2">Lista de productos cuya monodroga sea ibuprofeno bajo venta controlada</option>

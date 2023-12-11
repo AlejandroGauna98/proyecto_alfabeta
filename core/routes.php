@@ -7,7 +7,7 @@ if(!empty($_SESSION)) {
 			//RUTAS DE ABM de usuarios
 		    ,'crud_usuarios' => array('url' => 'modulos/vistas/crud_usuarios/crud_usuarios.php', 'urljs' => array('modulos/vistas/crud_usuarios/crud.js'))
 			//RUTAS DE Detalle de ventas
-		    ,'detalle_ventas' => array('url' => 'modulos/detalle_ventas.php', 'urljs' => array('modulos/detalle_ventas.js'))
+		    ,'detalle_ventas' => array('url' => 'modulos/vistas/detalle_ventas/detalle_ventas.php', 'urljs' => array('modulos/vistas/detalle_ventas/detalle_ventas.js'))
 			);
 			break;
 		default:

@@ -63,8 +63,6 @@
     <script src="datatables\dataTables.buttons.min.js"></script>
     <script src="datatables\buttons.print.min.js"></script>
     <script src="datatables\buttons.html5.min.js"></script>    
-    <!-- código propio JS --> 
-    <script type="text/javascript" src="modulos/main.js"></script>  
     
 
 
@@ -75,6 +73,18 @@
     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
     <script src="codigo.js"></script>    
 
+<?php
+if (isset($data_pages['urljs'])) {
+    if (count($data_pages['urljs']) > 0) {
+        echo "<!--Scripts for pages-->";
+        for ($i = 0; $i < count($data_pages['urljs']); $i++) {
+?>
+            <script src="<?php echo $data_pages['urljs'][$i] . '?v=' . date("YmdHis"); ?>"></script>
+<?php
+        }
+    }
+}
+?>
 </body>
 
 </html>
